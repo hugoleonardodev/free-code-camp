@@ -1,5 +1,47 @@
-#image {
+#main {
+  align-items: center;
+  background-color: rgb( 180, 180, 180 );
   display: flex;
-  width: 100vw;
-  height: 50vh;
+  flex-direction: column;
+  width: 95vw;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+}
+
+#sub-title {
+  display: flex;
+  justify-content: center;
+}
+
+#img-div {
+  align-items: center;
+  background-color: rgb(217, 217, 217);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#image {
+  display: "block";
+  min-width: 318px;
+  width: 80vw;
+  max-height:auto;
+  max-width:100%;
+  padding: 20px;
+  justify-content: center;
+}
+
+#img-caption {
+  text-align: center;
+  display: flex;
+  max-width: 100%;
+  max-height: auto;
+}
+
+#tribute-title {
+  display: flex;
+  justify-content: center;
 }
