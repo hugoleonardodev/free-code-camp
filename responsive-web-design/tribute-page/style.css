@@ -1,5 +1,11 @@
+#main {
+  background-color: rgb(180,180,180);
+  width: 100vw;
+
+}
+
 #image {
   display: flex;
-  width: 100vw;
+  width: 90vw;
   height: 50vh;
 }
