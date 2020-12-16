@@ -7,7 +7,70 @@
   <title>myPen Survey Form</title>
 </head>
 <body>
-  <h1 id="title">myPen Survey Form</h1>
+  <h1 id='title'>myPen Survey Form</h1>
+  <p id="description">This is myPen Survey Form for FreeCodeCamp Responsive Web Desing Project</p>
+  <form id="survey-form">
+    <label id="name-label">
+      <p>Name</p>
+      <input type="text" id="name" placeholder="Enter your name" required>
+    </label>
+    <div id="email-age-container">
+      <label id="email-label">
+        <p>Email</p>
+        <input type="email" id="email" placeholder="Enter your Email" required>
+      </label>
+      <label  id="number-label">
+        <p>Age (optional)</p>
+        <input type="number" id="number" placeholder="Age" min="9" max="15" required>
+      </label>
+    </div>
+    <div id="option-container">
+      <p>Which option describes better your user experience?</p>
+      <label id="experience" for="experience">Choose an option:</label>
+        <select name="experience" id="dropdown">
+          <option value="not-good">Not Good</option>
+          <option value="good">Good</option>
+          <option value="very-good">Very Good</option>
+          <option value="excelent">Excelent</option>
+        </select>
+    </div>
+    <div id="tools-and-languages">
+      <fieldset name="options">
+        <legend>Which tool you like the most?</legend>
+        <input type="radio" name="options" value="Option 1">
+        <label for="options">HTML
+        </label>
+        <input type="radio" name="options" value="Option 2">    
+        <label for="options">CSS
+        </label>
+        <input type="radio" name="options" value="Option 3">
+        <label for="options">JavaScript
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Select wich languages you would like to see on CodePen?</legend>
+        <input type="checkbox" value="c">
+        <label>C</label>
+        <input type="checkbox" value="ruby">
+        <label>Ruby</label>
+        <input type="checkbox" value="python">
+        <label>Python</label>
+        <input type="checkbox" value="elixir">
+        <label>Elixir</label>
+        <input type="checkbox" value="go">
+        <label>Go</label>
+        <input type="checkbox" value="swift">
+        <label>Swift</label>
+        <input type="checkbox" value="php">
+        <label>PHP</label>
+        <input type="checkbox" value="java">
+        <label>Java</label>
+      </fieldset>
+    </div>
+    <p id="let-me-know">If you want to tell me something, let me know:</p>
+    <textarea placeholder="Please, writte here..."></textarea>
+    <button type="submit" id="submit">Submit</button>
+  </form>
 </body>
 <script src="script.js"></script>
 </html>

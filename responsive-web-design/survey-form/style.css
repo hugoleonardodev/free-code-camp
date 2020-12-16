@@ -1,0 +1,109 @@
+body {
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  font-size: large;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+#description {
+  display: flex;
+  justify-content: center;
+}
+
+#name-label {
+  display: flex;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+#email-label {
+  display: flex;
+  padding: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#number-label {
+  display: flex;
+  margin-top: 10px;
+}
+
+#name {
+  display: flex;
+  font-size: xx-large;
+  height: 30px;
+  margin-left: 20px;
+  width: 85vw;
+}
+
+#email {
+  display: flex;
+  font-size: xx-large;
+  height: 30px;
+  margin-left: 20px;
+  width: 50vw;
+}
+
+#number {
+  font-size: xx-large;
+  height: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#email-age-container {
+  align-items: baseline;
+  display: flex;
+}
+
+#option-container {
+  align-items: baseline;
+  display: flex;
+  margin-left: 20px;
+}
+
+#experience {
+  margin-left: 20px;
+}
+
+#dropdown {
+  margin-left: 20px;
+}
+
+#tools-and-languages {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 20px;
+}
+
+textarea {
+  display: flex;
+  height: 20vh;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 95vw;
+}
+
+#let-me-know {
+  margin-left: 20px;
+}
+
+#submit {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
