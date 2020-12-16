@@ -34,38 +34,40 @@
           <option value="excelent">Excelent</option>
         </select>
     </div>
-    <fieldset name="Options">
-      <legend>Which tool you like the most?</legend>
-      <label for="options">HTML
+    <div id="tools-and-languages">
+      <fieldset name="options">
+        <legend>Which tool you like the most?</legend>
         <input type="radio" name="options" value="Option 1">
-      </label>
-      <label for="options">CSS
+        <label for="options">HTML
+        </label>
         <input type="radio" name="options" value="Option 2">    
-      </label>
-      <label for="options">JavaScript
+        <label for="options">CSS
+        </label>
         <input type="radio" name="options" value="Option 3">
-      </label>
-    </fieldset>
-    <fieldset>
-      <legend>Select wich languages you would like to see on CodePen?</legend>
-      <input type="checkbox" value="c">
-      <label>C</label>
-      <input type="checkbox" value="ruby">
-      <label>Ruby</label>
-      <input type="checkbox" value="python">
-      <label>Python</label>
-      <input type="checkbox" value="elixir">
-      <label>Elixir</label>
-      <input type="checkbox" value="go">
-      <label>Go</label>
-      <input type="checkbox" value="swift">
-      <label>Swift</label>
-      <input type="checkbox" value="php">
-      <label>PHP</label>
-      <input type="checkbox" value="java">
-      <label>Java</label>
-    </fieldset>
-    <p>If you want to tell me something, let me know:</p>
+        <label for="options">JavaScript
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Select wich languages you would like to see on CodePen?</legend>
+        <input type="checkbox" value="c">
+        <label>C</label>
+        <input type="checkbox" value="ruby">
+        <label>Ruby</label>
+        <input type="checkbox" value="python">
+        <label>Python</label>
+        <input type="checkbox" value="elixir">
+        <label>Elixir</label>
+        <input type="checkbox" value="go">
+        <label>Go</label>
+        <input type="checkbox" value="swift">
+        <label>Swift</label>
+        <input type="checkbox" value="php">
+        <label>PHP</label>
+        <input type="checkbox" value="java">
+        <label>Java</label>
+      </fieldset>
+    </div>
+    <p id="let-me-know">If you want to tell me something, let me know:</p>
     <textarea placeholder="Please, writte here..."></textarea>
     <button type="submit" id="submit">Submit</button>
   </form>
