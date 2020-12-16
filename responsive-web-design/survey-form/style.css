@@ -10,6 +10,11 @@ h1 {
   justify-content: center;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+}
+
 #description {
   display: flex;
   justify-content: center;
@@ -17,19 +22,57 @@ h1 {
 
 #name-label {
   display: flex;
-  position: absolute;
+  padding: 10px;
+  margin-left: 10px;
 }
 
 #email-label {
   display: flex;
+  padding: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 #number-label {
   display: flex;
-  flex-flow: row-reverse;
+  margin-top: 10px;
 }
 
-form {
+#name {
   display: flex;
-  flex-direction: column;
+  font-size: xx-large;
+  margin-left: 20px;
+  width: 85vw;
+}
+
+#email {
+  display: flex;
+  font-size: xx-large;
+  margin-left: 20px;
+  width: 50vw;
+}
+
+#number {
+  font-size: xx-large;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#email-age-container {
+  align-items: baseline;
+  display: flex;
+}
+
+#option-container {
+  align-items: baseline;
+  display: flex;
+  margin-left: 20px;
+}
+
+#experience {
+  margin-left: 20px;
+}
+
+#dropdown {
+  margin-left: 20px;
 }
