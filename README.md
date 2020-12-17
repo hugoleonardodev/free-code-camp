@@ -6,6 +6,6 @@ https://codepen.io/hugoleonardodev/pen/ZEpWNyx
 
 My Free Code Camp Profile.
 
-https://www.freecodecamp.org/hugoleonardodev
+<a href="https://www.freecodecamp.org/hugoleonardodev" target="_blank">My FreeCodeCamp Profile</a>
 
-<a href="https://www.freecodecamp.org/hugoleonardodev"><img src="fcc-profile.png"></a>
+<a href="https://www.freecodecamp.org/hugoleonardodev" target="_blank"><img src="fcc-profile.png"></a>
