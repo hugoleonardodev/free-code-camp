@@ -2,9 +2,9 @@
 
 Free Code Camp Responsive Web Design Projects from the course on website.
 
-https://codepen.io/hugoleonardodev/pen/ZEpWNyx
+Including more than 2000 hours of lectures and projects.
 
-My Free Code Camp Profile.
+<a href="https://www.freecodecamp.org/learn" target="_blank">FreeCodeCamp</a>
 
 <a href="https://www.freecodecamp.org/hugoleonardodev" target="_blank">My FreeCodeCamp Profile</a>
 
