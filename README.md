@@ -7,3 +7,5 @@ https://codepen.io/hugoleonardodev/pen/ZEpWNyx
 My Free Code Camp Profile.
 
 https://www.freecodecamp.org/hugoleonardodev
+
+<img src="fcc-profile.png">
