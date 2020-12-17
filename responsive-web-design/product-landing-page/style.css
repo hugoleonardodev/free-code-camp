@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  margin-top: -150px;
+}
+
+#header-img {
+  width: 20%;
+}
+
+h4, p {
+  display: flex;
+  justify-content: center;
+}
+
+#about-studio {
+  display: flex;
+  margin-top: 150px;
+}
+
+.about-studio {
+  display: block;
+}
+
+.about-studio div {
+  display: flex;
+  justify-content: center;
+}
+
+.studio {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  display: flex;
+}
+
+.portfolio {
+  display: flex;
+  width: 90vw;
+}
+
+.portfolio img {
+  display: flex;
+  width: 100%;
+}
