@@ -8,4 +8,4 @@ My Free Code Camp Profile.
 
 https://www.freecodecamp.org/hugoleonardodev
 
-<img src="fcc-profile.png">
+<a href="https://www.freecodecamp.org/hugoleonardodev"><img src="fcc-profile.png"></a>
