@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+}
+
+::selection {
+  color: white;
+  background: #c59d5f;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  margin-top: -150px;
+}
+
+#header-img {
+  width: 20%;
+}
+
+#nav-bar {
+  width: 70vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-link {
+  color: #c59d5f;;
+  display: flex;
+  text-decoration: none;
+}
+
+h4, p {
+  display: flex;
+  justify-content: center;
+}
+
+#about-studio {
+  display: flex;
+  margin-top: 150px;
+}
+
+.about-studio {
+  display: block;
+}
+
+.about-studio div {
+  display: flex;
+  justify-content: center;
+}
+
+.studio {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  display: flex;
+}
+
+.portfolio {
+  display: flex;
+  width: 90vw;
+}
+
+.portfolio img {
+  display: flex;
+  width: 100%;
+}
+
+#submit-email {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 600px)
+{
+  #about-studio {
+    display: block;
+  }
+
+  #logo {
+    margin-right: -285px;
+  }
+
+  .portfolio {
+    display: block;
+    margin-left: -23px;
+  }
+}
+
+footer {
+  background-color: black;
+  color: #c59d5f;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+}
