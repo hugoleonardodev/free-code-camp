@@ -1,6 +1,41 @@
+/* #nav-bar {
+  z-index: 1;
+}
+
+.nav-bar {
+  background-color: #3f3d56!important;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+}
+
+.navbar-expand-sm {
+  background-color: #3f3d56!important;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+}
+.navbar-dark {
+  background-color: #3f3d56!important;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+}
+
 .bg-dark {
   background-color: #3f3d56!important;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+} */
+
+#welcome-section {
+  height: 100vh;
 }
+
+/* .hero {
+  height: 100vh;
+} */
 
 /* .collapse {
   padding: inherit;
@@ -15,8 +50,8 @@
 }  */
 
 /* Small devices (landscape phones, 576px and up) */
-/* @media (min-width: 576px)
-{
+/* @media (min-width: 576px) */
+/* {
 
 } */
 
