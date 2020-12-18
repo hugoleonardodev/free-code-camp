@@ -2,7 +2,7 @@
 
 Free Code Camp Responsive Web Design Projects from the course on website.
 
-Including more than 2000 hours of lectures and projects.
+Including more than 3000 hours of lectures and projects.
 
 <a href="https://www.freecodecamp.org/learn" target="_blank">FreeCodeCamp</a>
 
