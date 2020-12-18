@@ -9,47 +9,97 @@
 <body>
   <nav id="navbar">
     <header>Array Methods</header>
-    <a class="nav-link" href="#find">array.find()</a>
-    <a class="nav-link" href="#filter">array.filter()</a>
-    <a class="nav-link" href="#forEach">array.forEach</a>
-    <a class="nav-link" href="#map">array.map()</a>
-    <a class="nav-link" href="#reduce">array.reduce()</a>
+    <a class="nav-link" href="#array.find()">array.find()</a>
+    <a class="nav-link" href="#array.filter()">array.filter()</a>
+    <a class="nav-link" href="#array.forEach()">array.forEach()</a>
+    <a class="nav-link" href="#array.map()">array.map()</a>
+    <a class="nav-link" href="#array.reduce()">array.reduce()</a>
   </nav>
   <main id="main-doc">
-    <section id="find" class="main-section">
+    <section id="array.find()" class="main-section">
       <header>array.find()</header>
-      <p></p>
-      <p></p>
-      <code></code>
-      <li></li>
+      <p>The find() method returns the value of the first element in the provided array that satisfies the provided testing function.</p>
+      <p>
+        The find method executes the callback function once for each index of the array until the callback returns a truthy value. If so, find immediately returns the value of that element. Otherwise, find returns undefined.
+        callback is invoked for every index of the array, not just those with assigned values. This means it may be less efficient for sparse arrays, compared to methods that only visit assigned values.       
+        If a thisArg parameter is provided to find, it will be used as the this value inside each invocation of the callback. If it is not provided, then undefined is used.        
+        The find method does not mutate the array on which it is called, but the function provided to callback can. If so, the elements processed by find are set before the first invocation of callback.
+      </p>
+      <code>
+        const array1 = [5, 12, 8, 130, 44];<br>
+        const found = array1.find(element => element > 10);<br>
+        console.log(found);<br>
+        // expected output: 12<br>
+      </code>
+      <li>If you need the index of the found element in the array, use findIndex().</li>
     </section>
-    <section id="filter" class="main-section">
+    <section id="array.filter()" class="main-section">
       <header>array.filter()</header>
-      <p></p>
-      <p></p>
-      <code></code>
-      <li></li>
+      <p>The filter() method creates a new array with all elements that pass the test implemented by the provided function.</p>
+      <p>
+        filter() calls a provided callback function once for each element in an array, and constructs a new array of all the values for which callback returns a value that coerces to true. callback is
+        invoked only for indexes of the array which have assigned values; it is not invoked for indexes which have been deleted or which have never been assigned values. Array elements which do not pass
+        the callback test are simply skipped, and are not included in the new array.
+      </p>
+      <code>
+        const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];<br>
+        const result = words.filter(word => word.length > 6);<br>
+        console.log(result);<br>
+        // expected output: Array ["exuberant", "destruction", "present"]<br>
+        </code>
+      <li>filter() does not mutate the array on which it is called.</li>
     </section>
-    <section id="forEach" class="main-section">
+    <section id="array.forEach()" class="main-section">
       <header>array.forEach()</header>
-      <p></p>
-      <p></p>
-      <code></code>
-      <li></li>
+      <p>The forEach() method executes a provided function once for each array element.</p>
+      <p>
+        forEach() calls a provided callback function once for each element in an array in ascending order. It is not invoked for index properties that have been deleted or are uninitialized.
+        f a thisArg parameter is provided to forEach(), it will be used as callback's this value. The thisArg value ultimately observable by callback is determined according to the usual rules for determining the this seen by a function.
+        The range of elements processed by forEach() is set before the first invocation of callback. Elements which are appended to the array after the call to forEach() begins will not be visited by callback. If existing elements of the
+        array are changed or deleted, their value as passed to callback will be the value at the time forEach() visits them; elements that are deleted before being visited are not visited. If elements that are already visited are removed
+        (e.g. using shift()) during the iteration, later elements will be skipped. (See this example, below.)
+        forEach() executes the callback function once for each array element; unlike map() or reduce() it always returns the value undefined and is not chainable. The typical use case is to execute side effects at the end of a chain.
+      </p>
+      <code>
+        const array1 = ['a', 'b', 'c'];<br>
+        array1.forEach(element => console.log(element));<br>
+        // expected output: "a"<br>
+        // expected output: "b"<br>
+        // expected output: "c"<br>
+      </code>
+      <li>forEach() does not mutate the array on which it is called. (However, callback may do so)</li>
     </section>
-    <section id="map" class="main-section">
+    <section id="array.map()" class="main-section">
       <header>array.map()</header>
-      <p></p>
-      <p></p>
-      <code></code>
-      <li></li>
+      <p>The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.</p>
+      <p>map calls a provided callback function once for each element in an array, in order, and constructs a new array from the results. callback is invoked only for indexes of the array which have assigned values (including undefined).</p>
+      <code>
+        const array1 = [1, 4, 9, 16];<br>
+        // pass a function to map<br>
+        const map1 = array1.map(x => x * 2);<br>     
+        console.log(map1);<br>
+        // expected output: Array [2, 8, 18, 32]<br>
+        </code>
+      <li>A new array with each element being the result of the callback function.</li>
     </section>
-    <section id="reduce" class="main-section">
+    <section id="array.reduce()" class="main-section">
       <header>array.reduce()</header>
-      <p></p>
-      <p></p>
-      <code></code>
-      <li></li>
+      <p>The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in single output value.</p>
+      <p>
+        The reduce() method executes the callback once for each assigned value present in the array, taking four arguments: accumulator, currentValue, currentIndex and Array
+        The first time the callback is called, accumulator and currentValue can be one of two values. If initialValue is provided in the call to reduce(), then accumulator will be equal to initialValue, and currentValue will be equal to the first value in the array. If no initialValue is provided, then accumulator will be equal to the first value in the array, and currentValue will be equal to the second.
+      </p>
+      <code>
+        const array1 = [1, 2, 3, 4];<br>
+        const reducer = (accumulator, currentValue) => accumulator + currentValue;<br>
+        // 1 + 2 + 3 + 4<br>
+        console.log(array1.reduce(reducer));<br>
+        // expected output: 10<br>
+        // 5 + 1 + 2 + 3 + 4<br>
+        console.log(array1.reduce(reducer, 5));<br>
+        // expected output: 15<br>
+      </code>
+      <li>Returns the single value that results from the reduction.</li>
     </section>
   </main>
 </body>
