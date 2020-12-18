@@ -1,0 +1,23 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  position: fixed;
+}
+
+main {
+  margin-left: 200px;
+}
+
+@media (max-width: 600px)
+{
+  nav {
+    display: block;
+    float: none;
+    position: relative;
+  }
+
+  main {
+    margin-left:0px;
+  }
+}
