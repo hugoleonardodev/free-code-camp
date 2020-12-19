@@ -27,16 +27,45 @@ var contacts = [
 ];
 
 
-function lookUpProfile(name, prop){
-// Only change code below this line
-  if (contacts.find(object => object.firstName === name &&
-    contacts.find(object => object[prop] !== undefined))) {
-    const result = (contacts.find(object => object[prop]));
-    return result[prop];
+// function lookUpProfile(name, prop){
+//   if (contacts.some(object => object.firstName === name) &&
+//     contacts.some(object => object[prop])) {
+//     const result = (contacts.find(object => object[prop]));
+//     return result[prop];
+//   } else if (!contacts.find(object => object.firstName === name)) {
+//     return 'No such contact'
+//   } else if (!contacts.find(object => object[prop])) {
+//     return 'No such property'
+//   }
+// }
+
+// console.log(lookUpProfile("Bob", "likes"));
+
+// console.log(lookUpProfile("Akira", "likes"));
+
+// console.log(lookUpProfile("Akira", "address"));
+
+// console.log(lookUpProfile("Sherlock", "likes"));
+
+// console.log(lookUpProfile("Kristian", "lastName"));
+
+function lookUpProfile(name, prop) {
+  for (var x = 0; x < contacts.length; x++) {
+    if (contacts[x].firstName === name) {
+      if (contacts[x].hasOwnProperty(prop)) {
+        return contacts[x][prop];
+      } else {
+        return "No such property";
+      }
+    }
   }
-// Only change code above this line
+  return "No such contact";
 }
 
-console.log(lookUpProfile("Bob", "likes"));
+console.log(lookUpProfile("Kristian", "lastName"));
 
-console.log(lookUpProfile("Akira", "likes"));
+console.log(lookUpProfile("Sherlock", "likes"));
+
+console.log(lookUpProfile("Bob", "number"));
+
+console.log(lookUpProfile("Akira", "address"));
