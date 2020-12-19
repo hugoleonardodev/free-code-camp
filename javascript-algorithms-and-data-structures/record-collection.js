@@ -21,8 +21,8 @@ var collection = {
 
 // Only change code below this line
 function updateRecords(object, id, prop, value) {
+  const array = Object.keys(object[id]);
   if (prop !== 'tracks' && value !== '') {
-    const array = Object.keys(object[id]);
     if (array.includes(prop)) {
       object[id][prop] = value;
     } else {
@@ -30,8 +30,16 @@ function updateRecords(object, id, prop, value) {
       obj[prop] = value;
       Object.assign(object[id], obj);
     }
+  } else if (prop === 'tracks' && !array.includes('tracks')) {
+    const arr = [];
+    arr.push(value);
+    const obj = {};
+    obj[prop] = arr;
+    Object.assign(object[id], obj);
   }
   return object;
 }
 
 console.log(updateRecords(collection, 5439, 'artist', 'ABBA'));
+
+console.log(updateRecords(collection, 5439, "tracks", "Take a Chance on Me"));
