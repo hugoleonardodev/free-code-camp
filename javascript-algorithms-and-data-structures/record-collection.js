@@ -36,10 +36,14 @@ function updateRecords(object, id, prop, value) {
     const obj = {};
     obj[prop] = arr;
     Object.assign(object[id], obj);
+  } else if (prop === 'tracks' && value !== '') {
+    object[id][prop].push(value);
   }
   return object;
 }
 
-console.log(updateRecords(collection, 5439, 'artist', 'ABBA'));
+// console.log(updateRecords(collection, 5439, 'artist', 'ABBA'));
 
-console.log(updateRecords(collection, 5439, "tracks", "Take a Chance on Me"));
+// console.log(updateRecords(collection, 5439, "tracks", "Take a Chance on Me"));
+
+console.log(updateRecords(collection, 1245, "tracks", "Addicted to Love"));
