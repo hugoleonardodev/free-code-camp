@@ -30,7 +30,7 @@ class Thermostat {
   }
   // setter
   set temperature(C) {
-    this.farenheitTemp = (C * 9.0 / 5 + 3);
+    this.farenheitTemp = (C * 9.0 / 5 + 32);
   }
 }
 // Only change code above this line
