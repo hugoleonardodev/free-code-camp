@@ -38,6 +38,8 @@ function updateRecords(object, id, prop, value) {
     Object.assign(object[id], obj);
   } else if (prop === 'tracks' && value !== '') {
     object[id][prop].push(value);
+  } else if (value === '' && prop !== '') {
+    delete object[id][prop];
   }
   return object;
 }
@@ -46,4 +48,6 @@ function updateRecords(object, id, prop, value) {
 
 // console.log(updateRecords(collection, 5439, "tracks", "Take a Chance on Me"));
 
-console.log(updateRecords(collection, 1245, "tracks", "Addicted to Love"));
+// console.log(updateRecords(collection, 1245, "tracks", "Addicted to Love"));
+
+// console.log(updateRecords(collection, 2548, "tracks", ""));
