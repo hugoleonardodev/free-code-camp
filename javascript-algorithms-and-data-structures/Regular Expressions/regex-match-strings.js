@@ -96,9 +96,21 @@ let result = chewieQuote.match(chewieRegex);
 // lazy matching and greedy matching with ?
 
 let text = "<h1>Winter is coming</h1>";
-let myRegex = /<[a-z].?>/; // Change this line
+let myRegex = /<[a-z].?>/; // lazy match
 let result = text.match(myRegex);
 
 console.log(result);
+
+let reCriminals = /C+/; // greedy match
+
+// only in at the start of the string with 
+
+let rickyAndCal = "Cal and Ricky both like racing.";
+let calRegex = /^Cal/; // Change this line
+let result = calRegex.test(rickyAndCal);
+
+// matches at the end with $
+
+
 
 
