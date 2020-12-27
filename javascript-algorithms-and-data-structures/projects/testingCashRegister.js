@@ -1,19 +1,16 @@
 class CashRegister {
   constructor(cid) {
-    return cid.reduce((acc, obj) => {
-      let key = obj[0]
-      if (!acc[key]) {
-        acc[key] = [];
-      }
-      acc[key] = (obj[1])
-      return acc;
-    }, {})
+    this.cid = cid;
+    this.status = 'CLOSED';
+  }
+  check() {
+    return {status: this.status, chage: this.cid}
   }
 };
 
 const result = new CashRegister([["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", 4.25], ["ONE", 90], ["FIVE", 55], ["TEN", 20], ["TWENTY", 60], ["ONE HUNDRED", 100]])
 
-console.log(result);
+console.log(result.check());
 
 function checkCashRegister(price, cash, cid) {
   let change;
