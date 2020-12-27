@@ -15,6 +15,8 @@ function telephoneCheck(str) {
     return true;
   } else if (onlyNumber.length === 10 && verifyParenthesis.join('') === '()') {
     return true;
+  } else if (onlyNumber.length === 11 && stringNumber.indexOf('1') !== 0) {
+    return false;
   } else if (onlyNumber.length === 11 && indexOfOne === 0) {
     return true;
   }
@@ -22,20 +24,22 @@ function telephoneCheck(str) {
 }
 
 
-console.log(telephoneCheck("-1 (757) 622-7382"));
+// console.log(telephoneCheck("-1 (757) 622-7382"));
 
-console.log(("-1 (757) 622-7382").match(regexMatch));
+// console.log(("-1 (757) 622-7382").match(regexMatch));
 
-console.log(telephoneCheck("(555) 555-5555"));
+console.log(telephoneCheck("555-555-5555"));
 
-console.log(telephoneCheck("1(555)555-5555"));
+// console.log(telephoneCheck("(555) 555-5555"));
 
-console.log(telephoneCheck("1 555)555-5555"));
+// console.log(telephoneCheck("1(555)555-5555"));
 
-console.log(telephoneCheck("123**&!!asdf#"));
+// console.log(telephoneCheck("1 555)555-5555"));
 
-console.log(telephoneCheck("(555)5(55?)-5555"))
+// console.log(telephoneCheck("123**&!!asdf#"));
 
-console.log(telephoneCheck("5555555555"));
+// console.log(telephoneCheck("(555)5(55?)-5555"))
 
-console.log(telephoneCheck("2 757 622-7382"));
+// console.log(telephoneCheck("5555555555"));
+
+// console.log(telephoneCheck("2 757 622-7382"));
