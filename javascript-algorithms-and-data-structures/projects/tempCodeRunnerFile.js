@@ -1,9 +1,8 @@
-const regex = /[.!?]/g;
 
-const str = "GUR DHVPX OEBJA SBK WHZCF BIRE GUR YNML QBT."
+console.log(telephoneCheck("-1 (757) 622-7382"));
 
-const replace = str.replace(regex,'');
+console.log(("-1 (757) 622-7382").match(regexMatch));
 
-const match = str.match(regex);
+console.log(telephoneCheck("(555) 555-5555"));
 
-console.log(replace + '.');
+console.log(telephoneCheck("1(555)555-5555"));
