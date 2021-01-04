@@ -4,30 +4,32 @@ import './App.css';
 
 function App() {
   class MarkdownExample extends React.Component {
-    getMarkdownText() {
-      var rawMarkup = marked('This is _Markdown_.', {sanitize: true});
-      return { __html: rawMarkup };
-    }
-    render() {
-      return <div className="App" dangerouslySetInnerHTML={this.getMarkdownText()} />
-    }
-  }
-
-  class MarkdownInput extends React.Component {
     constructor(props) {
       super(props);
+      this.handleChange = this.handleChange.bind(this);
       this.state = {
-        input: "Hello, **world**!"
+        input: 'Hello, **World**! This is _Markdown_.',
+        output: 'Hello, **World**! This is _Markdown_.'
       }
+    }
+    getMarkdownText() {
+      const output = this.state.output;
+      var rawMarkup = marked(output, {sanitize: true});
+      return { __html: rawMarkup };
+    }
+    handleChange(e) {
+      this.setState({ output: e.target.value });
     }
     render() {
       return (
-        <div>
-          <textarea rows="50" cols="60" onChange={this.state.value} defaultValue={this.state.input}></textarea>
+        <div className="App">
+          <textarea rows="50" cols="60" onChange={this.handleChange} defaultValue={this.state.input}></textarea>
+          <div dangerouslySetInnerHTML={this.getMarkdownText()} />
         </div>
       )
     }
   }
+
   // class MarkdownEditor extends React.Component {
   //   constructor(props) {
   //     super(props);
@@ -66,11 +68,7 @@ function App() {
   //   }
 
   return (
-    <div>
-      <MarkdownExample/>
-      <MarkdownInput/>
-    </div>
-    
+      <MarkdownExample/>  
   );
 }
 export default App;
