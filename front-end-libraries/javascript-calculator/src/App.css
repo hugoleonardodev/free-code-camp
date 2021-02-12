@@ -1,0 +1,28 @@
+body {
+  margin-left: 100px;
+}
+
+#board {
+  display: flex;
+  flex-direction: row;
+}
+
+#first-column {
+  display: flex;
+  flex-direction: column;
+}
+
+#second-column {
+  display: flex;
+  flex-direction: column;
+}
+
+#third-column {
+  display: flex;
+  flex-direction: column;
+}
+
+#operators {
+  display: flex;
+  flex-direction: column;
+}

@@ -122,6 +122,7 @@ req.onload = () => {
   data = JSON.parse(req.responseText);
   values = data.data;
   console.log(values);
+  console.log(values[0]);
   drawCanvas();
   generateScales();
   drawBars();
