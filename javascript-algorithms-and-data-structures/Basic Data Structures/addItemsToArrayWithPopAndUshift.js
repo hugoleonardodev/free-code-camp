@@ -1,6 +1,6 @@
 function mixedNumbers(arr) {
   // Only change code below this line
-  const a = ['I', 2, 'three'];
+  const a = ['I', 2, 'three'].reverse();
   const b = [7, 'VIII', 9];
   let counter = 0;
   while(counter < 3) {
