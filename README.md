@@ -1,6 +1,6 @@
 <h1>Free Code Camp</h1>
 
-Free Code Camp Responsive Web Design Projects from the course on website.
+Free Code Camp Responsive Projects from the course on website.
 
 Including more than 3000 hours of lectures and projects.
 
